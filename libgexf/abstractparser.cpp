@@ -33,6 +33,7 @@ using namespace std;
 
 namespace libgexf {
 
+AbstractParser::~AbstractParser() {}
 
 //-----------------------------------------
 t_id AbstractParser::getIdAttribute(xmlTextReaderPtr reader, const char* const name) {

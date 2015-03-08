@@ -55,6 +55,8 @@ public:
      *  \param name : Name of the XML element to process
      */
     virtual void processNode(xmlTextReaderPtr reader, const xmlChar* name) = 0;
+
+    virtual ~AbstractParser();
 protected:
     libgexf::t_id getIdAttribute(xmlTextReaderPtr reader, const char* const name);
     std::string getStringAttribute(xmlTextReaderPtr reader, const char* const name);
